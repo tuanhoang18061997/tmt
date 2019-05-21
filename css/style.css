@@ -20,8 +20,10 @@ header{
     max-width: 1180px;
     margin: 0 auto;
 }
-.clearfix{
-    overflow: auto;
+.clearfix:after{
+    content: "";
+  clear: both;
+    
 }
 /* logo */
 .logo{
@@ -85,6 +87,9 @@ h1{
 .colorchange{
     animation: colorchange 1s infinite;
 }
+.mobile-icon{
+    display: none;
+}
 @keyframes colorchange{
     0%{color:red;}
     25%{color:#bf55ec;}
@@ -98,11 +103,13 @@ h1{
         width: 100%;
         padding: 0 2%;
     }
+    
 }
 @media only screen and (max-width:998px){
     h1{
         font-size: 200%;
     }
+    
 }
 
 @media only screen and (max-width:768px){
@@ -114,5 +121,26 @@ h1{
     }
     .mobile-icon{
         display: inline-block;
+        color: white;
+        float: right;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    .main-nav{
+        float: left;
+    }
+    .main-nav li{
+        display: block;
+        margin-top: 10px;
+        
+    }
+}
+
+@media only screen and (max-width:480px){
+    .main-content-header{
+        margin-top: 40px;
+    }
+    .btn-full{
+        margin-bottom: 10px;
     }
 }
