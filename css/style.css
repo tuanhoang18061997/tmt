@@ -10,7 +10,7 @@ body{
     color: white;
 }
 header{
-    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('/images/header.jpg');
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('https://images.pexels.com/photos/1725011/pexels-photo-1725011.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
