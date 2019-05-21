@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Flamenco&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    overflow-x: hidden; /*ẩn những đoạn chữ thừa theo chiều ngang*/ 
+    color: white;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('/images/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.clearfix{
+    overflow: auto;
+}
+/* logo */
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+/* menu */
+.main-nav{
+    float: right;
+    margin-top: 60px;
+}
+.main-nav li{
+    display: inline-block; /*menu nằm trên 1 hàng*/
+    list-style: none;
+    margin-left: 40px;
+}
+.main-nav li a{
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 100;
+    transition: .5s all;
+}
+.main-nav li a:hover{
+    border-bottom: 2px solid #bf55ec;
+}
+.main-content-header{
+    width: 1180px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* Hết Menu */
+h1{
+    font-family: 'Flamenco', cursive;
+    color: #fff;
+    font-size: 42px;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+.btn-full{
+    display: inline-block;
+    padding: 10px 70px;
+    margin-left: 10px;
+    font-weight: lighter;
+    color:wheat;
+    transition:1s all ;
+}
+.btn-full:hover{
+    border-radius:200px; 
+    color: #bf55ec;
+    border: 1px solid #bf55ec;
+}
+.colorchange{
+    animation: colorchange 1s infinite;
+}
+@keyframes colorchange{
+    0%{color:red;}
+    25%{color:#bf55ec;}
+    50%{color: white;}
+    75%{color:#adad;}
+    100%{color: #bf55ec;}
+}
+
+@media only screen and (max-width:1180px){
+    .main-content-header{
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+@media only screen and (max-width:998px){
+    h1{
+        font-size: 200%;
+    }
+}
+
+@media only screen and (max-width:768px){
+    h1{
+        font-size: 180%;
+    }
+    .main-nav{
+        display: none;
+    }
+    .mobile-icon{
+        display: inline-block;
+    }
+}
